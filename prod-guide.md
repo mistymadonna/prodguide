@@ -63,3 +63,32 @@ By Misty Hays
 * **Multiple cursors**: Alt+Shift+arrow (or down)
 * **Alt+click+drag** selecting instead of copy/paste
 
+### Performance
+* [**Disable WPF designer**](https://aka.ms/prodguide-perf1) if you prefer to only see the XAML
+* Disable the JavaScript analysis if unnecessary for your work
+
+### Extensions
+* [**GitHub Flow with Visual Studio**](https://aka.ms/prodguide-ext1) 
+* [**C/C++ and C# that improves IDE features**](https://aka.ms/prodguide-ext2) 
+* [**Trailing Whitespace Visualizer**](https://aka.ms/prodguide-ext3)
+* [**Markdown Editor**](https://aka.ms/prodguide-ext4)
+* [**Tools to optimize any JPEG, PNG and GIFs**](https://aka.ms/prodguide-ext5) 
+* [**VsVim**](https://aka.ms/prodguide-ext6)
+* [**C# productivity enhancer**](https://aka.ms/prodguide-ext7)
+* [**Generate XML Comments from your code, maintain clean and up-to-date documentation**](https://aka.ms/prodguide-ext8)
+* [**Full support for static HTML, Razor and WebForms**](https://aka.ms/prodguide-ext9)
+* [**Arduino IDE for Visual Studio**](https://aka.ms/prodguide-ext10) 
+* [**Color output for build and debug windows**](https://aka.ms/prodguide-ext11) *(makes it easier to focus on the important parts of the code)*
+* [**Productivity Power Tools 2017/2019**](https://aka.ms/prodguide-ext12)
+* [**Code alignment**](https://aka.ms/prodguide-ext13)
+* [**SpellChecker**](https://aka.ms/prodguide-ext14) 
+* [**Provides ZenCoding for the HTML Editor - full support for static HTML, Razor and WebForms**](https://aka.ms/prodguide-ext15)
+* [**Color Theme Editor**](https://aka.ms/prodguide-ext16)
+* [**Generate TypeScript files from C# code files using TypeScript Templates**](https://aka.ms/prodguide-ext17) 
+* [**SuperCharger**](https://aka.ms/prodguide-ext18) 
+* [**Switch between themes and window layouts quickly**](https://aka.ms/prodguide-ext19)
+* [**MatchMargin**](https://aka.ms/prodguide-ext20) 
+* [**Add color to your Visual Studio Text Editor88**](https://aka.ms/prodguide-ext21)
+* [**Roslynator**](https://aka.ms/prodguide-ext22)
+
+
