@@ -91,4 +91,18 @@ By Misty Hays
 * [**Add color to your Visual Studio Text Editor88**](https://aka.ms/prodguide-ext21)
 * [**Roslynator**](https://aka.ms/prodguide-ext22)
 
+### Other Docs, resources
+* [**Accessibility tips and tricks**](https://aka.ms/prodguide-other1)
+* [**10/28 Release Notes**](https://aka.ms/prodguide-other2)
+* [**Visual Studio 2019 documentation**](https://aka.ms/prodguide-other3)
+* [**Install and manage Nuget packages**](https://aka.ms/prodguide-other4) in Visual Studio
+* [**Code like Scott Hanselman**](https://aka.ms/prodguide-other5)
+* [**Code like Mads Kristensen**](https://aka.ms/prodguide-other6)
+* [**Create a new Git repo**](https://aka.ms/prodguide-other7)
+* [**VS Product Lifecycle and Servicing**](https://aka.ms/prodguide-other8)
+* [**How to modify your workload**](https://aka.ms/prodguide-other9)
+* [**Visual Studio main**](https://aka.ms/prodguide-other10)
+* Customizing [**CMake**](https://aka.ms/prodguide-other11) settings
+
+
 
