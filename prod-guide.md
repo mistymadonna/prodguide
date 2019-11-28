@@ -23,7 +23,7 @@ By Misty Hays
 * Use 'git diff -w' to ignore whitespace modifications caused by the document formatting
 * [**How saved window layouts can save you time**](https://aka.ms/prodguide-gen14)
 * [**Visual Studio productivity tips**](https://aka.ms/prodguide-gen15)
-* **Track Active Item** in Solution Explorer ![Image](\assets\track-item.png)
+* **Track Active Item** in Solution Explorer ![Active Item screenshot](\assets\track-item.png)
 
 ### Navigation, layout
 * Jump to location in file then: use [**map mode**](https://aka.ms/prodguide-nav1)
@@ -47,7 +47,7 @@ By Misty Hays
 * Change brace formatting with [**Formatting/New Lines**](https://aka.ms/prodguide-refac2)
 * Change your indentation with [**Tabs**](https://aka.ms/prodguide-refac3)
 * Copy JSON fragments with [**Paste Special**](https://aka.ms/prodguide-refac4)
-* [**Use Scope to This**](https://aka.ms/prodguide-refac5) to declutter large projects ![Image](\assets\scope-to-this.gif)
+* [**Use Scope to This**](https://aka.ms/prodguide-refac5) to declutter large projects ![Scope to This screenshot](\assets\scope-to-this.gif)
 
 ### Cloud
 * [**Build for the cloud**](https://aka.ms/prodguide-cloud1)
@@ -62,6 +62,10 @@ By Misty Hays
 * Configure keyboard shortcuts using [**Options dialog box**](https://aka.ms/prodguide-keybi1)
 * **Multiple cursors**: Alt+Shift+arrow (or down)
 * **Alt+click+drag** selecting instead of copy/paste
+
+![VS Default shortcuts](\assets\Shortcuts-Vertical2.jpg)
+
+![Custom shortcut ideas](\assets\custom-shortcut-ideas.jpg)
 
 ### Performance
 * [**Disable WPF designer**](https://aka.ms/prodguide-perf1) if you prefer to only see the XAML
