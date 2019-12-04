@@ -1,67 +1,130 @@
 ﻿<!DOCTYPE html>
-
 <html>
-
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700,400,300" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
-    <title>Visual Studio</title>
+    <title>Visual Studio Productivity Guide</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
 
     <header>
-        <div class="inner">
-            <!-- Logo here -->
-            <!-- <img class="logo" src="https://placeholdit.imgix.net/~text?txtsize=18&bg=000000&txt=200%C3%9770&w=200&h=70" /> -->
-            <a href="/" class="logo">Visual Studio</a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <!-- have to use "fashionid" instead of "fashion" because of this bug: the browser
-                will navigate to the element when window.location.hash == the id -->
-                <li><a id="fashionid" onclick="showOnly('fashion')">Fashion</a></li>
-                <li><a id="videoid" onclick="showOnly('video')">Video</a></li>
-                <li><a data-toggle="modal" data-target="#myModal">About</a></li>
-            </ul>
-            <div class="social-media">
-                <a href="https://www.youtube.com/channel/UC8ia8o-Kv8vmjivyQr8ZqWQ"><img src="uploads/2016/1/414-youtube.svg" /></a>
-                <a href="https://twitter.com/mistymadonna"><img src="uploads/2016/1/407-twitter.svg" /></a>
-            </div>
-        </div>
+        <h1>Visual Studio Productivity Guide</h1>
+        <p>By Misty Hays</p>
+        <h2>EXECUTIVE SUMMARY</h2>
+        <p><em><strong>Why a Productivity Guide?</strong></em></p>
+        <p><em>The Productivity Guide serves as a tool for developers to save time when writing code. Instead of searching for documentation, shortcuts, and other resources, developers can find useful information in <strong>one place</strong>. This guide focuses on Visual Studio in the following areas: general tips, navigation and layout, debugging and error handling, refactoring, cloud, keybindings and shortcuts, performance, extensions, and others. It is a living document.</em></p>
     </header>
     <main>
-        <!-- Modal - as long as it's on the page, doesn't matter where-->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Visual Studio</h4>
-                        <p>Misty Madonna is a '90s and pop culture addict. She is currently based in Kurt Cobain's Seattle.</p>
-                        <div class="social-media2">
-                            <a href="https://www.youtube.com/channel/UC8ia8o-Kv8vmjivyQr8ZqWQ"><img src="uploads/2016/1/414-youtube.svg" /></a>
-                            <a href="https://twitter.com/mistymadonna"><img src="uploads/2016/1/407-twitter.svg" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h3>General</h3>
+        <ul>
+            <li>Learn Shortcuts with <a href="https://aka.ms/prodguide-gen1"><strong>Ctrl+Q</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-gen2"><strong>Vertical tabs are now in Preview</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-gen3"><strong>Organize recent templates</strong></a> by pinning, unpinning in New Project Dialog</li>
+            <li>See quick locations of recently used projects/solutions/folders in <a href="https://aka.ms/prodguide-gen4"><strong>search box in the start window</strong></a></li>
+            <li>Newly installed project templates are indicated with a <a href="https://aka.ms/prodguide-gen5"><strong>&quot;New&quot; label</strong></a> <em>(after 5 times it goes away)</em></li>
+            <li><a href="https://aka.ms/prodguide-gen6"><strong>Tutorials and resources</strong></a> based on your workload</li>
+            <li>Not enough requirements to complete a piece of code? Mock it using <a href="https://aka.ms/prodguide-gen7"><strong>task list</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-gen8"><strong>Solution Explorer shortcuts</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-gen9"><strong>Set bookmarks in code</strong></a></li>
+            <li><a href="https://docs.microsoft.com/en-us/visualstudio/ide/using-intellisense?view=vs-2019"><strong>IntelliSense</strong></a> code suggestions</li>
+            <li>Understand your code structure then: use <a href="https://aka.ms/prodguide-gen10"><strong>code map</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-gen11"><strong>Shortcut tips for Visual Studio</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-gen12"><strong>Creating code snippets</strong></a></li>
+            <li>Use 'git diff -w' to ignore whitespace modifications caused by the document formatting</li>
+            <li><a href="https://aka.ms/prodguide-gen14"><strong>How saved window layouts can save you time</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-gen15"><strong>Visual Studio productivity tips</strong></a></li>
+            <li><strong>Track Active Item</strong> in Solution Explorer <img src="assets\track-item.png" alt="Active Item screenshot"></li>
+        </ul>
+        <h3>Navigation, layout</h3>
+        <ul>
+            <li>Jump to location in file then: use <a href="https://aka.ms/prodguide-nav1"><strong>map mode</strong></a></li>
+            <li>See frequently used files then: use <a href="https://aka.ms/prodguide-nav2"><strong>Edit/Go To Recent File</strong></a></li>
+            <li>Move <a href="https://aka.ms/prodguide-nav3"><strong>Properties window</strong></a> to the right-side</li>
+            <li>Move Solution Explorer and tabs to the left-side (less distance to move the mouse, less eye movement from Solution Explorer -&gt; Test Explorer -&gt; Team Explorer</li>
+            <li>Detach/undock the “Changes” tab from Team Explorer and keep it as a subtab of the Solution Explorer group. That way, you can see the number of pending changes and quickly get the diffs.</li>
+            <li>Default position of the debugging buttons can be docked using <strong>“debug.toolBarLocation”: “docked”</strong></li>
+        </ul>
+        <h3>Debugging, errors</h3>
+        <ul>
+            <li>Display certain errors then: use <a href="https://aka.ms/prodguide-debug1"><strong>Error List</strong></a></li>
+            <li>Fix errors inline then: use <a href="https://aka.ms/prodguide-debug2"><strong>light bulbs</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-debug3"><strong>See what changes have been made</strong></a> to your code and the impact of those changes</li>
+            <li>Use <a href="https://aka.ms/prodguide-debug4"><strong>Live Share</strong></a> to debug together in real time, no matter the language or platform</li>
+            <li>Use <a href="https://aka.ms/prodguide-debug5"><strong>Interactive Window</strong></a> to write and test small code</li>
+            <li><a href="https://aka.ms/prodguide-debug6"><strong>Visual Studio Debugger</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-debug7"><strong>Save time debugging</strong></a></li>
+        </ul>
+        <h3>Refactoring</h3>
+        <ul>
+            <li>Adjust fonts with <a href="https://aka.ms/prodguide-refac1"><strong>Fonts and Colors</strong></a></li>
+            <li>Change brace formatting with <a href="https://aka.ms/prodguide-refac2"><strong>Formatting/New Lines</strong></a></li>
+            <li>Change your indentation with <a href="https://aka.ms/prodguide-refac3"><strong>Tabs</strong></a></li>
+            <li>Copy JSON fragments with <a href="https://aka.ms/prodguide-refac4"><strong>Paste Special</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-refac5"><strong>Use Scope to This</strong></a> to declutter large projects <img src="assets\scope-to-this.gif" alt="Scope to This screenshot"></li>
+        </ul>
+        <h3>Cloud</h3>
+        <ul>
+            <li><a href="https://aka.ms/prodguide-cloud1"><strong>Build for the cloud</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-cloud2"><strong>Azure project templates</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-cloud3"><strong>Easy deployment</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-cloud4"><strong>If you’re dealing with an issue that is hard to reproduce locally on your machine</strong></a></li>
+            <li>Manage your Azure resources and resource groups with <a href="https://aka.ms/prodguide-cloud5"><strong>Cloud Explorer</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-cloud6"><strong>Azure Repos Git tutorial</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-cloud7"><strong>Kubernetes: Up and Running</strong></a></li>
+        </ul>
+        <h3>Keybindings</h3>
+        <ul>
+            <li>Configure keyboard shortcuts using <a href="https://aka.ms/prodguide-keybi1"><strong>Options dialog box</strong></a></li>
+            <li><strong>Multiple cursors</strong>: Alt+Shift+arrow (or down)</li>
+            <li><strong>Alt+click+drag</strong> selecting instead of copy/paste</li>
+        </ul>
+        <p><img src="assets\Shortcuts-Vertical2.jpg" alt="VS Default shortcuts"></p>
+        <p><img src="assets\custom-shortcut-ideas.jpg" alt="Custom shortcut ideas"></p>
+        <h3>Performance</h3>
+        <ul>
+            <li><a href="https://aka.ms/prodguide-perf1"><strong>Disable WPF designer</strong></a> if you prefer to only see the XAML</li>
+            <li>Disable the JavaScript analysis if unnecessary for your work</li>
+        </ul>
+        <h3>Extensions</h3>
+        <ul>
+            <li><a href="https://aka.ms/prodguide-ext1"><strong>GitHub Flow with Visual Studio</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext2"><strong>C/C++ and C# that improves IDE features</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext3"><strong>Trailing Whitespace Visualizer</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext4"><strong>Markdown Editor</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext5"><strong>Tools to optimize any JPEG, PNG and GIFs</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext6"><strong>VsVim</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext7"><strong>C# productivity enhancer</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext8"><strong>Generate XML Comments from your code, maintain clean and up-to-date documentation</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext9"><strong>Full support for static HTML, Razor and WebForms</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext10"><strong>Arduino IDE for Visual Studio</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext11"><strong>Color output for build and debug windows</strong></a> <em>(makes it easier to focus on the important parts of the code)</em></li>
+            <li><a href="https://aka.ms/prodguide-ext12"><strong>Productivity Power Tools 2017/2019</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext13"><strong>Code alignment</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext14"><strong>SpellChecker</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext15"><strong>Provides ZenCoding for the HTML Editor - full support for static HTML, Razor and WebForms</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext16"><strong>Color Theme Editor</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext17"><strong>Generate TypeScript files from C# code files using TypeScript Templates</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext18"><strong>SuperCharger</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext19"><strong>Switch between themes and window layouts quickly</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext20"><strong>MatchMargin</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext21"><strong>Add color to your Visual Studio Text Editor88</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-ext22"><strong>Roslynator</strong></a></li>
+        </ul>
+        <h3>Other Docs, resources</h3>
+        <ul>
+            <li><a href="https://aka.ms/prodguide-other1"><strong>Accessibility tips and tricks</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-other2"><strong>10/28 Release Notes</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-other3"><strong>Visual Studio 2019 documentation</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-other4"><strong>Install and manage Nuget packages</strong></a> in Visual Studio</li>
+            <li><a href="https://aka.ms/prodguide-other5"><strong>Code like Scott Hanselman</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-other6"><strong>Code like Mads Kristensen</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-other7"><strong>Create a new Git repo</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-other8"><strong>VS Product Lifecycle and Servicing</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-other9"><strong>How to modify your workload</strong></a></li>
+            <li><a href="https://aka.ms/prodguide-other10"><strong>Visual Studio main</strong></a></li>
+            <li>Customizing <a href="https://aka.ms/prodguide-other11"><strong>CMake</strong></a> settings</li>
+        </ul>
     </main>
-    <script type="text/javascript" src="app.js" async></script>
 </body>
-
 </html>
