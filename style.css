@@ -1,0 +1,15 @@
+﻿body {
+    font-family: "Segoe UI", sans-serif;
+    display: inline-block;}
+
+a {
+    color: #000;
+    cursor: pointer;}
+
+header {
+    background: #FFF;}
+
+img {
+    display: block;
+    margin-left: 0px;
+    width: 35%;}
