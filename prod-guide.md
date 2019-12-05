@@ -48,7 +48,7 @@ By Misty Hays
 * Change your indentation with [**Tabs**](https://aka.ms/prodguide-refac3)
 * Copy JSON fragments with [**Paste Special**](https://aka.ms/prodguide-refac4)
 * Use [**Scope to This**](https://aka.ms/prodguide-refac5) to declutter large projects 
-* ![Scope to This screenshot](assets/scope-to-this.gif)
+  ![Scope to This screenshot](assets/scope-to-this.gif)
 
 ### Cloud
 * [**Build for the cloud**](https://aka.ms/prodguide-cloud1)
